@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=devic-height" />
+        <title>OpenWebinars.net - App PhoneGap usando WordPress</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header" data-position="fixed">
+                <h2>Entrar</h2>
+            </div>	 
+            <div data-role="main" class="ui-content">
+                <input id="username" type="text" placeholder="Escribe tu nombre de usuario">
+                <input id="password" type="password" placeholder="Escribe tu clave de usuario">
+                <button onclick="login();">Entrar</button>
+                <a href="#pagetwo" id="page_two_link"></a>
+            </div>	 
+            <div data-role="footer" data-position="fixed">
+                <h3>Realizado por @Openwebinars_net</h3>
+            </div>
+        </div> 	 
+        <div data-role="page" id="pagetwo">
+            <div data-role="header" data-position="fixed">
+                <h2>Posts</h2>
+            </div>	 
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" id="posts">                 
+                </ul>
+            </div>	 
+            <div data-role="footer" data-position="fixed">
+                <h3>Realizado por @Openwebinars_net</h3>
+            </div>
+        </div> 	 
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
